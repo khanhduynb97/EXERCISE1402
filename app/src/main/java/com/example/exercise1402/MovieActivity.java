@@ -22,21 +22,6 @@ public class MovieActivity extends AppCompatActivity {
 
         tvDesc = findViewById(R.id.tvDesc);
         btnPlay = findViewById(R.id.btnPlay);
-        btnPlay.setOnClickListener(view -> openDialog());
     }
 
-    private void openDialog() {
-        Dialog dialog = new Dialog(MovieActivity.this);
-        dialog.setCancelable(true);
-        dialog.setContentView(R.layout.trailer_movie);
-        dialog.show();
-
-        WindowManager.LayoutParams lp = new WindowManager.LayoutParams(WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
-        lp.copyFrom(dialog.getWindow().getAttributes());
-        dialog.getWindow().setAttributes(lp);
-        final VideoView videoview = (VideoView) dialog.findViewById(R.id.vvTrailer);
-        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.movie_trailer);
-        videoview.setVideoURI(uri);
-        videoview.start();
-    }
 }
