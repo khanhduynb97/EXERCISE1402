@@ -2,143 +2,138 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:paddingVertical="60dp"
+    android:paddingVertical="55dp"
     android:paddingHorizontal="55dp">
-
     <TextView
         android:id="@+id/tvSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="20dp"
         android:text="Sign Up"
         android:textSize="30sp"
-        android:textColor="#7560E8"/>
-
+        android:textColor="#6049DA" />
     <TextView
+        android:id="@+id/tvIntro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title"
-        android:textSize="10sp"
-        android:textColor="#7560E8"
-        android:layout_below="@+id/tvSignUp"/>
-
+        android:textSize="12sp"
+        android:textColor="#6049DA"
+        android:layout_below="@+id/tvSignUp" />
     <LinearLayout
+        android:id="@+id/llCredentials"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:paddingBottom="50dp">
-
+        android:paddingBottom="35dp">
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#7560E8"
-            android:orientation="horizontal"
+            android:background="#6049DA"
             android:paddingBottom="1dp"
             android:layout_marginTop="20dp">
-
             <TextView
+                android:id="@+id/tvAt"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@drawable/icon_bg"
                 android:foreground="@drawable/alternate_email_icon" />
-
             <EditText
+                android:id="@+id/edtPickUsername"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@color/white"
                 android:gravity="center_vertical"
                 android:text="Pick your username"
-                android:textColor="#7560E8"
-                android:textColorHint="#7560E8"
+                android:textColor="#6049DA"
+                android:textColorHint="#6049DA"
                 android:textSize="18sp" />
         </LinearLayout>
-
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#7560E8"
-            android:orientation="horizontal"
+            android:background="#6049DA"
             android:paddingBottom="1dp"
             android:layout_marginTop="20dp">
-
             <TextView
+                android:id="@+id/tvMail"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@drawable/icon_bg"
                 android:foreground="@drawable/mail_outline_icon" />
-
             <EditText
+                android:id="@+id/edtEnterEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@color/white"
                 android:gravity="center_vertical"
                 android:text="Enter your email address"
-                android:textColor="#7560E8"
-                android:textColorHint="#7560E8"
+                android:textColor="#6049DA"
+                android:textColorHint="#6049DA"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#7560E8"
-            android:orientation="horizontal"
+            android:background="#6049DA"
             android:paddingBottom="1dp"
             android:layout_marginTop="20dp">
-
             <TextView
+                android:id="@+id/tvKey"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
                 android:background="@drawable/icon_bg"
                 android:foreground="@drawable/key_icon" />
-
             <EditText
+                android:id="@+id/edtEnterPass"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@color/white"
                 android:gravity="center_vertical"
                 android:text="Enter your password"
-                android:textColor="#7560E8"
-                android:textColorHint="#7560E8"
+                android:textColor="#6049DA"
+                android:textColorHint="#6049DA"
                 android:textSize="18sp" />
         </LinearLayout>
-
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#7560E8"
-            android:orientation="horizontal"
+            android:background="#6049DA"
             android:paddingBottom="1dp"
             android:layout_marginTop="20dp">
-
             <TextView
+                android:id="@+id/tvKey2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom"
                 android:background="@drawable/icon_bg"
                 android:foreground="@drawable/key_icon" />
-
             <EditText
+                android:id="@+id/ReEnterPass"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@color/white"
                 android:gravity="center_vertical"
                 android:text="Re-enter your password"
-                android:textColor="#7560E8"
-                android:textColorHint="#7560E8"
+                android:textColor="#6049DA"
+                android:textColorHint="#6049DA"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentBottom="true">
-
         <Button
             android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
@@ -148,26 +143,23 @@
             android:textAllCaps="false"
             android:textSize="17sp"
             android:textColor="@color/white" />
-
         <TextView
+            android:id="@+id/tvAcc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Already have an account !!"
-            android:textColor="#7560E8"
+            android:textColor="#6049DA"
             android:gravity="center_horizontal"
-            android:layout_marginTop="30dp"/>
-
+            android:layout_marginTop="30dp" />
         <TextView
             android:id="@+id/tvSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign In "
-            android:textStyle="bold"
-            android:textColor="#7560E8"
-            android:gravity="center_horizontal"
             android:textSize="15sp"
-            android:layout_marginTop="10dp"/>
-
+            android:textStyle="bold"
+            android:textColor="#6049DA"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
-
 </RelativeLayout>

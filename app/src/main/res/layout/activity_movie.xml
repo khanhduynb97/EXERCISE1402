@@ -16,7 +16,7 @@
                     android:layout_height="match_parent"
                     android:src="@drawable/poster"
                     android:scaleType="centerCrop"
-                    app:cardCornerRadius="12dp"/>
+                    app:cardCornerRadius="12dp" />
                 <Button
                     android:id="@+id/btnPlay"
                     android:layout_width="25dp"
@@ -33,7 +33,7 @@
                     android:textColor="#BCBDC5"
                     android:gravity="center_vertical|end"
                     android:layout_alignParentBottom="true"
-                    android:paddingHorizontal="20dp"/>
+                    android:paddingHorizontal="20dp" />
         </RelativeLayout>
         <ScrollView
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                                     android:textColor="#F2F3F6"
                                     android:paddingVertical="5dp"
                                     android:paddingHorizontal="12dp"
-                                    android:layout_marginEnd="10dp"/>
+                                    android:layout_marginEnd="10dp" />
                                 <TextView
                                     android:id="@+id/tvGenre"
                                     android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
                                     android:textColor="#F2F3F6"
                                     android:paddingVertical="5dp"
                                     android:paddingHorizontal="12dp"
-                                    android:layout_marginEnd="10dp"/>
+                                    android:layout_marginEnd="10dp" />
                                 <LinearLayout
                                     android:orientation="horizontal"
                                     android:layout_width="wrap_content"
@@ -84,13 +84,13 @@
                                             android:layout_width="15dp"
                                             android:layout_height="15dp"
                                             android:background="@drawable/icon_star_fg"
-                                            android:layout_marginEnd="5dp"/>
+                                            android:layout_marginEnd="5dp" />
                                         <TextView
                                             android:id="@+id/tvEvaluate"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="5.0"
-                                            android:textColor="#F2F3F6"/>
+                                            android:textColor="#F2F3F6" />
                                 </LinearLayout>
                                 <View
                                     android:layout_width="0dp"
@@ -101,12 +101,12 @@
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     android:background="@drawable/icon_add_bg"
-                                    android:layout_marginEnd="20dp"/>
+                                    android:layout_marginEnd="20dp" />
                                 <TextView
                                     android:id="@+id/tvShare"
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
-                                    android:background="@mipmap/icon_share_foreground"/>
+                                    android:background="@mipmap/icon_share_foreground" />
                         </LinearLayout>
                         <LinearLayout
                             android:orientation="vertical"
@@ -121,7 +121,7 @@
                                     android:textStyle="bold"
                                     android:textSize="20sp"
                                     android:textColor="#F2F3F6"
-                                    android:layout_marginBottom="10dp"/>
+                                    android:layout_marginBottom="10dp" />
 
                                 <com.borjabravo.readmoretextview.ReadMoreTextView
                                     android:id="@+id/tvDesc"
@@ -136,7 +136,7 @@
                                     app:trimCollapsedText="@string/read_more"
                                     app:trimMode="trimModeLength"
                                     app:trimLength="210"
-                                    app:colorClickableText="#DF0734"/>
+                                    app:colorClickableText="#DF0734" />
                                 <RelativeLayout
                                     android:id="@+id/rlHide"
                                     android:layout_width="match_parent"
@@ -149,7 +149,7 @@
                                             android:text="Hide"
                                             android:textColor="#F2F3F6"
                                             android:textSize="12sp"
-                                            android:layout_alignParentEnd="true"/>
+                                            android:layout_alignParentEnd="true" />
                                 </RelativeLayout>
                         </LinearLayout>
                         <LinearLayout
@@ -166,7 +166,7 @@
                                     android:textSize="20sp"
                                     android:textColor="#F2F3F6"
                                     android:layout_marginBottom="10dp"
-                                    android:paddingHorizontal="25dp"/>
+                                    android:paddingHorizontal="25dp" />
                                 <HorizontalScrollView
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent">
