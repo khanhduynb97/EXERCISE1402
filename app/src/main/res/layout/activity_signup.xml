@@ -99,6 +99,7 @@
                 android:background="@color/white"
                 android:gravity="center_vertical"
                 android:text="Enter your password"
+                android:inputType="textPassword"
                 android:textColor="#6049DA"
                 android:textColorHint="#6049DA"
                 android:textSize="18sp" />
@@ -124,6 +125,7 @@
                 android:background="@color/white"
                 android:gravity="center_vertical"
                 android:text="Re-enter your password"
+                android:inputType="textPassword"
                 android:textColor="#6049DA"
                 android:textColorHint="#6049DA"
                 android:textSize="18sp" />

@@ -74,6 +74,7 @@
                 android:background="@color/white"
                 android:gravity="center_vertical"
                 android:text="password"
+                android:inputType="textPassword"
                 android:textColor="#6049DA"
                 android:textColorHint="#6049DA"
                 android:textSize="18sp" />
